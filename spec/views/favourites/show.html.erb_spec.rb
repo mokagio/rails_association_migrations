@@ -3,7 +3,8 @@ require 'rails_helper'
 RSpec.describe "favourites/show", type: :view do
   before(:each) do
     @favourite = assign(:favourite, Favourite.create!(
-      :name => "Name"
+      :name => "Name",
+      :user => User.create!
     ))
   end
 

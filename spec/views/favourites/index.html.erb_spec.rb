@@ -4,10 +4,12 @@ RSpec.describe "favourites/index", type: :view do
   before(:each) do
     assign(:favourites, [
       Favourite.create!(
-        :name => "Name"
+        :name => "Name",
+        :user => User.create!
       ),
       Favourite.create!(
-        :name => "Name"
+        :name => "Name",
+        :user => User.create!
       )
     ])
   end
