@@ -4,7 +4,8 @@ RSpec.describe "favourites/show", type: :view do
   before(:each) do
     @favourite = assign(:favourite, Favourite.create!(
       :name => "Name",
-      :user => User.create!
+      :user => User.create!,
+      :item => Item.create!
     ))
   end
 
